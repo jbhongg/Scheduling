@@ -1,0 +1,343 @@
+<TaTaskAssigningSolution id="1">
+  <id>0</id>
+  <TypeList id="2">
+    <TaType id="3">
+      <id>0</id>
+      <name>Atmospheric</name>
+    </TaType>
+    <TaType id="4">
+      <id>1</id>
+      <name>High pressure</name>
+    </TaType>
+  </TypeList>
+  <taskTypeList id="5">
+    <TaTaskType id="6">
+      <id>0</id>
+      <code>Cotton</code>
+      <baseDuration>90</baseDuration>
+      <requiredTypeList id="7">
+        <TaType reference="3"/>
+      </requiredTypeList>
+    </TaTaskType>
+    <TaTaskType id="8">
+      <id>1</id>
+      <code>Span</code>
+      <baseDuration>60</baseDuration>
+      <requiredTypeList id="9">
+        <TaType reference="4"/>
+      </requiredTypeList>
+    </TaTaskType>
+  </taskTypeList>
+  <MachineList id="10">
+    <TaMachine id="11">
+      <id>0</id>
+      <fullName>Atmospheric and High pressure Dyeing Machine</fullName>
+      <volume>1000</volume>
+      <TypeSet class="linked-hash-set" id="12">
+        <TaType reference="3"/>
+        <TaType reference="4"/>
+      </TypeSet>
+    </TaMachine>
+    <TaMachine id="13">
+      <id>1</id>
+      <fullName>Atmospheric Dyeing Machine</fullName>
+      <volume>1000</volume>
+      <TypeSet class="linked-hash-set" id="14">
+        <TaType reference="3"/>
+      </TypeSet>
+    </TaMachine>
+    <TaMachine id="15">
+      <id>2</id>
+      <fullName>High pressure Dyeing Machine</fullName>
+      <volume>1000</volume>
+      <TypeSet class="linked-hash-set" id="16">
+        <TaType reference="4"/>
+      </TypeSet>
+    </TaMachine>
+    <TaMachine id="17">
+      <id>3</id>
+      <fullName>High pressure Dyeing Machine</fullName>
+      <volume>750</volume>
+      <TypeSet class="linked-hash-set" id="18">
+        <TaType reference="4"/>
+      </TypeSet>
+    </TaMachine>
+    <TaMachine id="19">
+      <id>4</id>
+      <fullName>Atmospheric and High pressure Dyeing Machine</fullName>
+      <volume>500</volume>
+      <TypeSet class="linked-hash-set" id="20">
+        <TaType reference="3"/>
+        <TaType reference="4"/>
+      </TypeSet>
+    </TaMachine>
+    <TaMachine id="21">
+      <id>5</id>
+      <fullName>Atmospheric and High pressure Dyeing Machine</fullName>
+      <volume>250</volume>
+      <TypeSet class="linked-hash-set" id="22">
+        <TaType reference="3"/>
+        <TaType reference="4"/>
+      </TypeSet>
+    </TaMachine>
+    <TaMachine id="23">
+      <id>6</id>
+      <fullName>Atmospheric Dyeing Machine</fullName>
+      <volume>750</volume>
+      <TypeSet class="linked-hash-set" id="24">
+        <TaType reference="3"/>
+      </TypeSet>
+    </TaMachine>
+    <TaMachine id="25">
+      <id>7</id>
+      <fullName>High pressure Dyeing Machine</fullName>
+      <volume>750</volume>
+      <TypeSet class="linked-hash-set" id="26">
+        <TaType reference="4"/>
+      </TypeSet>
+    </TaMachine>
+  </MachineList>
+  <taskList id="27">
+    <TaTask id="28">
+      <id>0</id>
+      <taskType reference="6"/>
+      <indexInTaskType>1</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>750</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="29">
+      <id>1</id>
+      <taskType reference="8"/>
+      <indexInTaskType>1</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>750</volume>
+      <color>DARK</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="30">
+      <id>2</id>
+      <taskType reference="8"/>
+      <indexInTaskType>2</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>1000</volume>
+      <color>LIGHT</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="31">
+      <id>3</id>
+      <taskType reference="6"/>
+      <indexInTaskType>2</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>1000</volume>
+      <color>MEDIUM</color>
+      <Duedate>CRITICAL</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="32">
+      <id>4</id>
+      <taskType reference="8"/>
+      <indexInTaskType>3</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>DARK</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="33">
+      <id>5</id>
+      <taskType reference="8"/>
+      <indexInTaskType>4</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>250</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="34">
+      <id>6</id>
+      <taskType reference="6"/>
+      <indexInTaskType>3</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="35">
+      <id>7</id>
+      <taskType reference="8"/>
+      <indexInTaskType>5</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="36">
+      <id>8</id>
+      <taskType reference="6"/>
+      <indexInTaskType>4</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>750</volume>
+      <color>MEDIUM</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="37">
+      <id>9</id>
+      <taskType reference="6"/>
+      <indexInTaskType>5</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>250</volume>
+      <color>DARK</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="38">
+      <id>10</id>
+      <taskType reference="8"/>
+      <indexInTaskType>6</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="39">
+      <id>11</id>
+      <taskType reference="6"/>
+      <indexInTaskType>6</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>250</volume>
+      <color>MEDIUM</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="40">
+      <id>12</id>
+      <taskType reference="8"/>
+      <indexInTaskType>7</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>1000</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="41">
+      <id>13</id>
+      <taskType reference="6"/>
+      <indexInTaskType>7</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>MEDIUM</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="42">
+      <id>14</id>
+      <taskType reference="8"/>
+      <indexInTaskType>8</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>250</volume>
+      <color>DARK</color>
+      <Duedate>CRITICAL</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="43">
+      <id>15</id>
+      <taskType reference="6"/>
+      <indexInTaskType>8</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>750</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="44">
+      <id>16</id>
+      <taskType reference="8"/>
+      <indexInTaskType>9</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>MEDIUM</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="45">
+      <id>17</id>
+      <taskType reference="8"/>
+      <indexInTaskType>10</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>250</volume>
+      <color>MEDIUM</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="46">
+      <id>18</id>
+      <taskType reference="6"/>
+      <indexInTaskType>9</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>MEDIUM</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="47">
+      <id>19</id>
+      <taskType reference="6"/>
+      <indexInTaskType>10</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>250</volume>
+      <color>DARK</color>
+      <Duedate>CRITICAL</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="48">
+      <id>20</id>
+      <taskType reference="8"/>
+      <indexInTaskType>11</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="49">
+      <id>21</id>
+      <taskType reference="6"/>
+      <indexInTaskType>11</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>1000</volume>
+      <color>MEDIUM</color>
+      <Duedate>MAJOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="50">
+      <id>22</id>
+      <taskType reference="8"/>
+      <indexInTaskType>12</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>500</volume>
+      <color>DARK</color>
+      <Duedate>CRITICAL</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+    <TaTask id="51">
+      <id>23</id>
+      <taskType reference="6"/>
+      <indexInTaskType>12</indexInTaskType>
+      <readyTime>0</readyTime>
+      <volume>250</volume>
+      <color>LIGHT</color>
+      <Duedate>MINOR</Duedate>
+      <pinned>false</pinned>
+    </TaTask>
+  </taskList>
+  <frozenCutoff>0</frozenCutoff>
+</TaTaskAssigningSolution>
